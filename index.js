@@ -1,3 +1,7 @@
+document.addEventListener("DOMContentLoaded", function () {
+  loadEntries();
+});
+
 document
   .getElementById("registrationForm")
   .addEventListener("submit", function (e) {
