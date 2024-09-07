@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form id="registrationForm">
+            <label for="name">Name</label><br>
+            <input type="text" id="name" required><br><br>
+            
+            <label for="email">Email</label><br>
+            <input type="email" id="email" required><br><br>
+            
+            <label for="password">Password</label><br>
+            <input type="password" id="password" required><br><br>
+            
+            <label for="dob">Date of Birth</label><br>
+            <input type="date" id="dob" required><br>
+            <span id="dobError" class="error">Please make sure your age is between 18 and 55.</span><br><br>
+            
+            <label>
+                <input type="checkbox" id="terms" required> Accept Terms & Conditions
+            </label><br><br>
+            
+            <button type="submit">Submit</button>
+        </form>
+
+        <h2>Entries</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Password</th>
+                    <th>Dob</th>
+                    <th>Accepted terms?</th>
+                </tr>
+            </thead>
+            <tbody id="entriesTableBody"></tbody>
+        </table>
+    </div>
+
+    <script src="registration.js"></script>
+</body>
+</html>
