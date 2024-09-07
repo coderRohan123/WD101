@@ -1,12 +1,3 @@
-window.onload = function () {
-  clearLocalStorage();
-  loadEntries();
-};
-
-function clearLocalStorage() {
-  localStorage.removeItem("entries");
-}
-
 document
   .getElementById("registrationForm")
   .addEventListener("submit", function (e) {
